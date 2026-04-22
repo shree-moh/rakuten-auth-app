@@ -1,0 +1,27 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
+import Profile from './pages/Profile';
+import PrivateRoute from './components/PrivateRoute';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/signin" replace />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route
+          path="/profile"
+          element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
