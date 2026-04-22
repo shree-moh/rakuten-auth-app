@@ -1,6 +1,5 @@
-cat > src/api/auth.ts << 'EOF'
 import axios from 'axios';
-import { AuthResponse, User, LoginInput } from '../types/auth';
+import type { AuthResponse, User, LoginInput } from '../types/auth';
 
 const BASE_URL = 'http://127.0.0.1:8080';
 

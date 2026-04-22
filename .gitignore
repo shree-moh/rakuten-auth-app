@@ -1,0 +1,5 @@
+backend/venv/
+backend/.env
+backend/auth.db
+frontend/node_modules/
+frontend/dist/

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getMe, signout } from '../api/auth';
-import { User } from '../types/auth';
+import type { User } from '../types/auth';
 
 const Profile = () => {
   const navigate = useNavigate();
