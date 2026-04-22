@@ -5,3 +5,5 @@ frontend/node_modules/
 frontend/dist/
 backend/__pycache__/
 frontend/src/App.tsx 
+backend/.env
+backend/auth.db
